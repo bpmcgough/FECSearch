@@ -7,7 +7,6 @@ class CandidateList extends Component {
       this.props.currentCandidateList.map(candidate=>{
         return (
           <div
-            className="list-item"
             key={candidate.candidate_id}
           >
             <button

@@ -21,7 +21,6 @@ class App extends Component {
     // loads initial list
     request.get(`${BASE_URL}/candidates/search?api_key=${API_KEY}`)
     .then(res=>{
-      console.log(res.body.results);
       this.setState({currentCandidateList: res.body.results});
       this.setState({originalCandidateList: res.body.results})
     });
